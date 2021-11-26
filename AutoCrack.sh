@@ -12,8 +12,8 @@ sudo git clone https://github.com/clr2of8/DPAT.git
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++
 echo "Downloading huge wordlist for the cracking from weakpass.com"
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++
-sudo wget https://download.weakpass.com/wordlists/1948/weakpass_3a.7z
-sudo mv weakpass_3a.7z /usr/share/seclists/Passwords/Leaked-Databases/
+sudo wget https://download.weakpass.com/wordlists/1863/weakpass_2.gz
+sudo mv weakpass_2.gz /usr/share/seclists/Passwords/Leaked-Databases/
 fi
 if [ "$install" == n ]
 then
