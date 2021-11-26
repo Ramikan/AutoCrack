@@ -53,13 +53,13 @@ echo +++++++++++++++++++++++++++++++++++++++++++++++++++
 figlet -f big "STAGE: 3"
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++
 echo '\033k'Cracking Hashes Using Wordlist+Rule Attack'\033\\'
-hashcat -m 1000 -a 0 $companyname/$companyname.ntds /usr/share/seclists/Passwords/Leaked-Databases/weakpass_3a.7z -r /usr/share/hashcat/rules/* --session=$companyname --potfile-path=$companyname/$companyname.pot 
+hashcat -m 1000 -a 0 $companyname/$companyname.ntds /usr/share/seclists/Passwords/Leaked-Databases/weakpass_2p.gz -r /usr/share/hashcat/rules/* --session=$companyname --potfile-path=$companyname/$companyname.pot 
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++
 figlet -f big "STAGE: 4"
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++
 echo  '\033k'Cracking Hashes Using Combination Attack'\033\\'
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++
-hashcat -m 1000 -a 1 $companyname/$companyname.ntds /usr/share/seclists/Passwords/Leaked-Databases/weakpass_3a.7z /usr/share/seclists/Passwords/Leaked-Databases/hashesorg2019.gz --session=$companyname --potfile-path=$companyname/$companyname.pot 
+hashcat -m 1000 -a 1 $companyname/$companyname.ntds /usr/share/seclists/Passwords/Leaked-Databases/weakpass_2p.gz /usr/share/seclists/Passwords/Leaked-Databases/hashesorg2019.gz --session=$companyname --potfile-path=$companyname/$companyname.pot 
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++
 figlet -f big "STAGE: 5"
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++
